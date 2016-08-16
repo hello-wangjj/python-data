@@ -1,4 +1,4 @@
-# coding:utf-8
+# -*-coding:utf-8
 def my_sum(*args, **kw):
     if len(args) == 0:
         return 0

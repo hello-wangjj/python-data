@@ -26,13 +26,10 @@
 # (5) 在屏幕上打印文件内容
 
 
-data=open('Blowing in the wind.txt','r+')
-origin=data.read()
-data.seek(0,0)
+data = open('Blowing in the wind.txt', 'r+')
+origin = data.read()
+data.seek(0, 0)
 data.write('Blowin’ in the wind\tBob Dylan\n')
 data.write(origin)
 data.write('\n 1962 by Warner Bros. Inc.')
 data.close()
-
-
-
