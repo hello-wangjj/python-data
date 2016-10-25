@@ -6,6 +6,8 @@ from datetime import date
 from datetime import datetime
 import pandas as pd
 import matplotlib.pyplot as plt
+import ch
+ch.set_ch()
 __author__ = 'wangjj'
 __mtime__ = '20161023下午 10:11'
 start = datetime(2015, 1, 1)
@@ -56,7 +58,7 @@ plt.show()
 compare_ms_in = pd.DataFrame()
 compare_ms_in['ms'] = quotes_of_MSFT.open
 compare_ms_in['in'] = quotes_of_INT.open
-compare_ms_in.plot(title='open price of MS and INTEL')
+compare_ms_in.plot(title=u'微软和英特尔的开盘价')
 plt.show()
 plt.scatter(quotes_of_MSFT.close - quotes_of_MSFT.open, quotes_of_MSFT.volume)
 plt.show()
